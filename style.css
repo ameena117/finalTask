@@ -239,6 +239,22 @@ body {
     padding: 20px;
     border-radius: var(--border-radius);
 }
+.tests .cards .card .footer, .person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--sub-text-size);
+    padding: 0;
+}
+.tests .cards .card button{
+    background-color: #F1F1F3;
+    width: 50%;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border-width: 0;
+    font-weight: 400;
+}
+
 
 .courses .cards .card img {
     height: 150px;
