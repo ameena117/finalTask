@@ -1,0 +1,618 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+:root {
+    --orange-color: #FF9500;
+    --main-font-color: #262626;
+    --sub-font-color: #4C4C4D;
+    --main-text-size: 20px;
+    --heading-text-size: 15px;
+    --sub-text-size: 10px;
+    --border-radius: 5px;
+    --bacground-color: #F1F1F3;
+    --font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    background-color: var(--bacground-color);
+}
+
+.container {
+    margin: 15px 25px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--sub-text-size);
+}
+
+.navbar #logo {
+    vertical-align: middle;
+    margin-right: 22px;
+    width: 24px;
+    height: 24px;
+}
+
+.navbar .list li {
+    display: inline;
+}
+
+.navbar .list li a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    padding: 7px 12px;
+    border-radius: var(--border-radius);
+}
+
+.navbar .buttons li {
+    display: inline;
+    margin-left: 13px;
+}
+
+.navbar .buttons li button {
+    padding: 7px 12px;
+    border-radius: var(--border-radius);
+    border-width: 0;
+    background-color: var(--orange-color);
+    font-size: var(--sub-text-size);
+}
+
+.navbar #menu-icon {
+    width: 16px;
+    height: 16px;
+    visibility: hidden;
+}
+
+.header .hero {
+    text-align: center;
+    width: 60%;
+    margin: 25px auto;
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header .hero #flash {
+    height: 24px;
+    vertical-align: middle;
+    margin: 1px 5px;
+}
+
+.header .hero h2 {
+    font-weight: bolder;
+    font-size: var(--main-text-size);
+    border-radius: var(--border-radius);
+    padding: 3px;
+}
+
+.header .hero h3 {
+    font-weight: bold;
+    font-size: var(--heading-text-size);
+}
+
+.header .hero p {
+    font-weight: 400;
+    font-size: var(--sub-text-size);
+}
+
+.header .buttons {
+    text-align: center;
+}
+
+.header .buttons button {
+    padding: 7px 12px;
+    border-radius: var(--border-radius);
+    border-width: 0;
+    background-color: var(--orange-color);
+    font-size: var(--sub-text-size);
+    margin-left: 12px;
+}
+
+.header .cards {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    background-color: white;
+    gap: 10px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.header .cards .card, .footer .cards .card {
+    background-color: white;
+}
+
+.header .cards .card img {
+    width: 70px;
+    height: 40px;
+}
+
+.benefits,
+.courses,
+.tests,
+.prices,
+.footer {
+    padding: 10px;
+}
+
+.benefits h2,
+.courses h2,
+.tests h2,
+.prices h2 {
+    font-weight: 600;
+    color: var(--main-font-color);
+}
+
+.benefits .desc,
+.courses .desc,
+.tests .desc,
+.prices .desc {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    font-size: var(--sub-text-size);
+    margin-bottom: 10px;
+}
+
+.benefits .desc button,
+.courses .desc button,
+.tests .desc button,
+.prices .desc button {
+    font-size: var(--sub-text-size);
+    border-radius: var(--border-radius);
+    padding: 7px;
+    border-width: 0;
+    background-color: white;
+    font-weight: 400;
+}
+
+.benefits .cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    align-content: space-evenly;
+}
+
+.benefits .cards .card {
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    height: 175px;
+    position: relative;
+    border-radius: var(--border-radius);
+}
+
+.benefits .cards .card h2 {
+    background-color: white;
+    text-align: end;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.benefits .cards .card b,
+.courses .cards .card b,
+.prices .cards .card b,
+.footer .cards  .card a b {
+    font-weight: 700;
+    font-size: var(--sub-text-size);
+}
+
+.benefits .cards .card p,
+.courses .cards .card p,
+.tests .cards .card p {
+    background-color: white;
+    font-size: var(--sub-text-size);
+    margin: 10px 0px 20px 0px;
+}
+
+.benefits .cards .card img {
+    background-color: #F1F1F3;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.courses .cards,
+.tests .cards{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    text-align: start;
+    margin: 20px 0px;
+}
+
+.courses .cards .card,
+.tests .cards .card{
+    background-color: white !important;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+.courses .cards .card img {
+    height: 150px;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.courses .cards .card button{
+    background-color: #F1F1F3;
+    width: 100%;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    border-width: 0;
+    font-weight: 400;
+}
+.prices .cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+.prices .cards .card {
+    background-color: var(--bacground-color) ;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+.prices .cards .card .body {
+    background-color: white ;
+    border-radius: var(--border-radius);
+    margin: 5px 0;
+}
+.prices .cards .card button {
+    background-color: #F1F1F3;
+    width: 100%;
+    padding: 5px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border-width: 0;
+    font-weight: 400;
+}
+.prices .cards .card .header{
+    text-align: center;
+}
+.prices .cards .card ul {
+    list-style-position: inside;
+    margin: 10px;
+    text-align: start;
+}
+
+.prices .cards .card li {
+    font-size: var(--sub-text-size);
+    border: #26262614 solid 0.1px;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+}
+.footer{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 35px;
+}
+.footer .cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    align-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer .cards .card {
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    border-radius: var(--border-radius);
+    list-style-type: none;
+    
+}
+.footer .cards .card a{
+    color: var(--main-font-color);
+    font-size: var(--sub-text-size);
+    text-decoration: none;
+}
+.footer .cards .right-card{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+.footer .cards .left-card{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.footer p{
+    text-align: center;
+    font-size: var(--sub-text-size);
+    margin: 40px
+}
+.footer button{
+    margin: 2px 5px 0 0;
+    border: none;
+}
+
+@media screen and (max-width: 620px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: calc(--sub-text-size - 8px);
+    }
+
+    .navbar #logo {
+        vertical-align: middle;
+        margin-right: 22px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .navbar .list li a {
+        text-decoration: none;
+        color: var(--main-font-color);
+        padding: 5px 8px;
+        border-radius: var(--border-radius);
+    }
+
+    .navbar .buttons li button {
+        padding: 5px 8px;
+        border-radius: var(--border-radius);
+        border-width: 0;
+        background-color: var(--orange-color);
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .header .hero {
+        text-align: center;
+        width: 85%;
+        margin: 25px auto;
+        display: grid;
+        gap: 5px;
+        justify-content: center
+    }
+
+    .header .cards .card img {
+        width: 60px;
+        height: 35px;
+    }
+
+    .benefits h2,
+    .courses h2,
+    .tests h2,
+    .prices h2 {
+        font-weight: 600;
+        color: var(--sub-font-color);
+    }
+
+    .benefits .desc,
+    .courses .desc,
+    .tests .desc,
+    .prices .desc {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 6px;
+        font-size: var(--sub-text-size);
+    }
+
+    .benefits .desc button,
+    .courses .desc button,
+    .tests .desc button,
+    .prices .desc .button {
+        font-size: var(--sub-text-size);
+        border-radius: var(--border-radius);
+        padding: 3px 6px;
+        border-width: 0;
+        background-color: white;
+        font-weight: 400;
+
+    }
+
+    .benefits .cards {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 10px;
+        align-content: space-evenly;
+    }
+
+    .benefits .cards .card {
+        background-color: white;
+        padding: 15px;
+        text-align: left;
+        height: 175px;
+        position: relative;
+        border-radius: var(--border-radius);
+    }
+
+    .benefits .cards .card h2 {
+        background-color: white;
+        text-align: end;
+        font-weight: 800;
+        margin-bottom: 10px;
+        font-size: var(--main-text-size);
+    }
+
+    .benefits .cards .card b {
+        font-weight: 600;
+        background-color: white;
+        font-size: var(--sub-text-size);
+    }
+
+    .benefits .cards .card p,
+    .tests .cards .card p,
+    .prices .cards .card p {
+        background-color: white;
+        font-size: var(--sub-text-size);
+        margin: 8px 0px 15px 0px;
+    }
+
+    .benefits .cards .card img {
+        background-color: #F1F1F3;
+        height: 15px;
+        width: 15px;
+        padding: 3px;
+        border-radius: var(--border-radius);
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .courses .cards .card img {
+        height: 150px;
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: calc(var(--sub-text-size));
+    }
+
+    .navbar #logo {
+        vertical-align: middle;
+        margin-right: 22px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .navbar .list li a {
+        display: none;
+    }
+
+    .navbar #menu-icon {
+        width: 16px;
+        height: 16px;
+        visibility: visible;
+    }
+
+    .header .hero {
+        text-align: center;
+        width: 100%;
+        margin: 25px auto;
+        display: grid;
+        gap: 5px;
+        justify-content: center;
+        justify-items: center
+    }
+
+    .header .hero h2 {
+        font-weight: 800;
+        font-size: 16px;
+        border-radius: var(--border-radius);
+        padding: 2px;
+    }
+
+    .header .cards {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        background-color: #F1F1F3;
+        gap: 10px 7px;
+    }
+
+    .header .cards .card img {
+        width: 70px;
+        height: 40px;
+    }
+
+
+    .benefits .desc,
+    .courses .desc,
+    .tests .desc,
+    .prices .desc {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: start;
+        margin-bottom: 10px;
+    }
+
+    .benefits .desc button,
+    .courses .desc .buttons,
+    .tests .desc .buttons {
+        padding: 5px 10px;
+    }
+
+    .benefits .cards,
+    .courses .cards,
+    .tests .cards,
+    .prices .cards {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        align-content: space-evenly;
+    }
+
+    .benefits .cards .card p {
+        font-size: var(--sub-text-size);
+        margin: 5px 0px 5px 0px;
+    }
+
+    .benefits .cards .card img {
+        background-color: #F1F1F3;
+        height: 15px;
+        width: 15px;
+        padding: 3px;
+        border-radius: var(--border-radius);
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+
+    .courses .cards .card img {
+        height: 150px;
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+
+    .prices .buttons {
+        margin: auto;
+    }
+
+    .footer .cards {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        align-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .footer .cards .right-card{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+    }
+    .footer .cards .left-card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .footer p{
+        text-align: center;
+        font-size: var(--sub-text-size);
+        margin: 20px
+    }
+    .footer button{
+        margin: 2px 5px 0 0;
+        border: none;
+    }
+    
+}
