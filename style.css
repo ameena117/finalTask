@@ -239,12 +239,13 @@ body {
     padding: 20px;
     border-radius: var(--border-radius);
 }
-.tests .cards .card .footer, .person{
+.tests .cards .card .footer, .person, .person h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: var(--sub-text-size);
     padding: 0;
+    margin-left: 5px;
 }
 .tests .cards .card button{
     background-color: #F1F1F3;
@@ -253,6 +254,7 @@ body {
     border-radius: var(--border-radius);
     border-width: 0;
     font-weight: 400;
+    font-size: var(--sub-text-size);
 }
 
 
