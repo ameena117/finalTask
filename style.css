@@ -118,13 +118,13 @@ body {
 .header .cards {
     display: flex;
     background-color: white;
-    gap: 5%;
+    gap: 10px;
     text-align: left;
     margin: 20px auto;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
