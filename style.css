@@ -304,10 +304,14 @@ body {
     margin-left: 2px;
 }
 
+.tests .cards .card .footer a {
+    background-color: #F1F1F3;
+}
+
 .tests .cards .card .footer {
     border-top: solid 0.1px rgba(0, 0, 0, 0.389);
     padding: 5px;
-    background-color: #F1F1F3;
+    background-color: #f1f1f36b;
 }
 
 .tests .cards .card a {
@@ -462,7 +466,8 @@ body {
 .courses .desc a:hover,
 .tests .desc a:hover,
 .benefits .desc a:hover,
-.courses .cards .card .body a:hover {
+.courses .cards .card .body a:hover,
+.tests .cards .card .footer a:hover {
     border: solid 0.01px var(--orange-color);
     background-color: var(--orange-color);
     color: white;
