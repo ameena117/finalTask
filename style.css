@@ -331,6 +331,7 @@ body {
     background-color: white;
     border-radius: var(--border-radius);
     margin: 5px 0;
+    width: 100%;
 }
 
 .prices .cards .card a {
@@ -342,7 +343,6 @@ body {
     font-weight: 400;
     text-decoration: none;
     display: block;
-    width: 100%;
     text-align: center;
 }
 
@@ -352,7 +352,6 @@ body {
 
 .prices .cards .card ul {
     list-style-position: inside;
-    margin: 10px;
     text-align: start;
     width: 100%;
 }
@@ -361,7 +360,8 @@ body {
     font-size: var(--sub-text-size);
     border: #26262614 solid 0.1px;
     border-radius: var(--border-radius);
-    margin-top: 10px;
+    width: 90%;
+    margin: 15px auto;
 }
 
 .footer {
