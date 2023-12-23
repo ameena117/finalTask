@@ -434,7 +434,16 @@ body {
     list-style-type: none;
 }
 
-.footer .cards .card a {
+.footer .cards .profiles {
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    border-radius: var(--border-radius);
+    list-style-type: none;
+}
+
+.footer .cards .card a,
+.footer .cards .profiles a {
     color: var(--main-font-color);
     font-size: var(--sub-text-size);
     text-decoration: none;
@@ -480,9 +489,13 @@ body {
 .navbar .buttons a:hover,
 .header .buttons a:hover,
 .prices .desc a:hover,
-footer a:hover,
 .benefits .cards .card img:hover {
     border: solid 0.01px var(--orange-color);
+}
+
+.footer .card a:hover,
+.footer .profiles b:hover {
+    color: var(--orange-color);
 }
 
 @media screen and (max-width: 650px) {
