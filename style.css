@@ -16,6 +16,11 @@
     --font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+::selection {
+    background-color: var(--orange-color);
+    color: var(--bacground-color);
+}
+
 body {
     background-color: var(--bacground-color);
 }
@@ -164,13 +169,19 @@ body {
 .tests .desc,
 .prices .desc {
     display: flex;
-    grid-template-columns: auto auto;
     gap: 10px;
     font-size: var(--sub-text-size);
     margin-bottom: 10px;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between
+}
+
+.benefits .desc p,
+.courses .desc p,
+.tests .desc p,
+.prices .desc p {
+    width: 88%;
 }
 
 .benefits .desc a,
@@ -276,6 +287,12 @@ body {
     gap: 5px;
 }
 
+.courses .cards .card .left li {
+    padding: 2px;
+    border-radius: 5px;
+    border: var(--bacground-color) solid 0.01px;
+}
+
 .tests .cards .card .footer,
 .person,
 .person h2 {
@@ -314,6 +331,7 @@ body {
 
 .courses .cards .card a {
     background-color: #F1F1F3;
+    color: var(--main-font-color);
     padding: 5px;
     border-radius: var(--border-radius);
     border-width: 0;
@@ -432,7 +450,7 @@ body {
 .footer p {
     text-align: center;
     font-size: var(--sub-text-size);
-    margin: 40px
+    margin: 10px
 }
 
 .footer a {
@@ -440,21 +458,29 @@ body {
     border: none;
 }
 
-a:hover,
-.buttons a {
-    opacity: 40px;
-    background-color: teal;
+.navbar .list a:hover,
+.courses .desc a:hover,
+.tests .desc a:hover,
+.benefits .desc a:hover,
+.courses .cards .card .body a:hover {
+    border: solid 0.01px var(--orange-color);
+    background-color: var(--orange-color);
+    color: white;
+}
+
+.benefits .cards .card:hover,
+.prices .cards .card:hover,
+.tests .cards .card:hover,
+.courses .cards .card:hover,
+.navbar .buttons a:hover,
+.header .buttons a:hover,
+.prices .desc a:hover,
+footer a:hover,
+.benefits .cards .card img:hover {
+    border: solid 0.01px var(--orange-color);
 }
 
 @media screen and (max-width: 650px) {
-    .navbar {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: calc(--sub-text-size - 8px);
-    }
-
     .navbar #logo {
         vertical-align: middle;
         margin-right: 22px;
@@ -463,55 +489,22 @@ a:hover,
     }
 
     .navbar .list li a {
-        text-decoration: none;
-        color: var(--main-font-color);
         padding: 5px 8px;
-        border-radius: var(--border-radius);
     }
 
     .navbar .buttons li a {
         padding: 5px 8px;
-        border-radius: var(--border-radius);
-        border-width: 0;
-        background-color: var(--orange-color);
         font-size: 8px;
         font-weight: 400;
     }
 
     .header .hero {
-        text-align: center;
-        width: 85%;
-        margin: 25px auto;
-        display: grid;
-        gap: 5px;
-        justify-content: center
+        width: 90%;
     }
 
     .header .cards .card img {
         width: 60px;
         height: 35px;
-    }
-
-    .benefits h2,
-    .courses h2,
-    .tests h2,
-    .prices h2 {
-        font-weight: 600;
-        color: var(--sub-font-color);
-    }
-
-    .benefits .desc a,
-    .courses .desc a,
-    .tests .desc a,
-    .prices .desc .a {
-        font-size: var(--sub-text-size);
-        border-radius: var(--border-radius);
-        padding: 6px 6px;
-        border-width: 0;
-        background-color: white;
-        font-weight: 400;
-        text-align: center;
-        width: fit-content;
     }
 
     .benefits .cards {
@@ -552,19 +545,6 @@ a:hover,
         margin: 8px 0px 15px 0px;
     }
 
-    .benefits .cards .card img {
-        background-color: #F1F1F3;
-        height: 15px;
-        width: 15px;
-        padding: 3px;
-        border-radius: var(--border-radius);
-        position: absolute;
-        bottom: 0;
-        right: 15px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
     .courses .cards .card img {
         height: 150px;
         width: 100%;
@@ -596,6 +576,7 @@ a:hover,
         width: 16px;
         height: 16px;
         visibility: visible;
+        vertical-align: middle;
     }
 
     .header .hero {
@@ -620,17 +601,6 @@ a:hover,
         height: 40px;
     }
 
-
-    .benefits .desc,
-    .courses .desc,
-    .tests .desc,
-    .prices .desc {
-        display: grid;
-        grid-template-columns: auto;
-        justify-items: start;
-        margin-bottom: 10px;
-    }
-
     .benefits .cards,
     .courses .cards,
     .tests .cards,
@@ -648,8 +618,8 @@ a:hover,
 
     .benefits .cards .card img {
         background-color: #F1F1F3;
-        height: 15px;
-        width: 15px;
+        height: 18px;
+        width: 18px;
         padding: 3px;
         border-radius: var(--border-radius);
         position: absolute;
