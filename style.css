@@ -66,6 +66,7 @@ body {
     border-width: 0;
     background-color: var(--orange-color);
     font-size: var(--sub-text-size);
+    color: var(--main-font-color);
 }
 
 .navbar #menu-icon {
@@ -84,10 +85,17 @@ body {
     padding: 20px;
 }
 
-.header .hero #flash {
+.header .hero img#flash {
     height: 24px;
     vertical-align: middle;
     margin: 1px 5px;
+}
+
+.header .hero img#abs {
+    height: 30px;
+    position: relative;
+    right: 10%;
+    top: 30%;
 }
 
 .header .hero h2 {
@@ -118,6 +126,7 @@ body {
     background-color: var(--orange-color);
     font-size: var(--sub-text-size);
     margin-left: 12px;
+    color: var(--main-font-color);
 }
 
 .header .cards {
@@ -129,7 +138,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -194,6 +203,7 @@ body {
     border-width: 0;
     background-color: white;
     text-decoration: none;
+    color: var(--main-font-color);
 }
 
 .prices .desc .buttons {
@@ -240,7 +250,6 @@ body {
 .benefits .cards .card p,
 .courses .cards .card p,
 .tests .cards .card p {
-    background-color: white;
     font-size: var(--sub-text-size);
     margin: 10px 0px 20px 0px;
 }
@@ -278,7 +287,6 @@ body {
 
 .tests .cards .card {
     background-color: white !important;
-    padding: 20px;
     border-radius: var(--border-radius);
 }
 
@@ -300,8 +308,14 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: var(--sub-text-size);
-    padding: 0;
-    margin-left: 2px;
+}
+
+.tests .cards .card .body {
+    padding: 10px;
+}
+
+.tests .person {
+    padding: 2px;
 }
 
 .tests .cards .card .footer a {
@@ -310,8 +324,8 @@ body {
 
 .tests .cards .card .footer {
     border-top: solid 0.1px rgba(0, 0, 0, 0.389);
-    padding: 5px;
     background-color: #f1f1f36b;
+    margin: auto;
 }
 
 .tests .cards .card a {
@@ -326,6 +340,9 @@ body {
     color: var(--main-font-color);
 }
 
+.tests .cards .card img {
+    margin-right: 5px;
+}
 
 .courses .cards .card img {
     height: 150px;
@@ -354,7 +371,9 @@ body {
     font-size: var(--sub-text-size);
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .prices .cards {
@@ -411,8 +430,7 @@ body {
     margin: 20px auto;
 }
 
-.footer {
-    background-color: white;
+footer .footer {
     width: 100%;
     margin: auto;
     padding: 35px;
@@ -471,6 +489,10 @@ body {
     border: none;
 }
 
+footer {
+    background-color: white;
+}
+
 .navbar .list a:hover,
 .courses .desc a:hover,
 .tests .desc a:hover,
@@ -517,7 +539,8 @@ body {
     }
 
     .header .hero {
-        width: 90%;
+        width: 95%;
+        position: relative;
     }
 
     .header .cards .card img {
@@ -604,7 +627,7 @@ body {
         display: grid;
         gap: 5px;
         justify-content: center;
-        justify-items: center
+        justify-items: center;
     }
 
     .header .hero h2 {
@@ -617,6 +640,13 @@ body {
     .header .cards .card img {
         width: 70px;
         height: 40px;
+    }
+
+    .header .hero img#abs {
+        height: 20px;
+        position: relative;
+        right: 50%;
+        top: 50%;
     }
 
     .benefits .cards,
