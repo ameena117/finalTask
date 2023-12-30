@@ -151,6 +151,10 @@ body {
     background-color: white;
 }
 
+.header .cards .card {
+    width: calc((100%-10px) / 7);
+}
+
 .header .cards .card img {
     width: 70px;
     height: 40px;
@@ -159,8 +163,7 @@ body {
 .benefits,
 .courses,
 .tests,
-.prices,
-.footer {
+.prices {
     padding: 10px;
 }
 
@@ -491,6 +494,7 @@ footer .footer {
 
 footer {
     background-color: white;
+    padding: 30px;
 }
 
 .navbar .list a:hover,
@@ -520,7 +524,33 @@ footer {
     color: var(--orange-color);
 }
 
-@media screen and (max-width: 650px) {
+* {
+    animation-name: show;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes show {
+    0% {
+        translate: 0 -100%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 0.8;
+    }
+
+    100% {
+        translate: 0 0;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .navbar #logo {
         vertical-align: middle;
         margin-right: 22px;
@@ -593,7 +623,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
     .navbar {
         width: 100%;
         display: flex;
@@ -635,6 +665,10 @@ footer {
         font-size: 16px;
         border-radius: var(--border-radius);
         padding: 5px;
+    }
+
+    .header .cards .card {
+        width: calc((100%-30px) / 3);
     }
 
     .header .cards .card img {
