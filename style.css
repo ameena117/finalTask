@@ -132,14 +132,15 @@ body {
 .header .cards {
     display: flex;
     background-color: white;
-    gap: 10px;
+    gap: 15px;
     text-align: left;
-    margin: 20px auto;
+    margin: 20px;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding: 0 10px;
 }
 
 .header .main {
@@ -153,6 +154,7 @@ body {
 
 .header .cards .card {
     width: calc((100%-10px) / 7);
+
 }
 
 .header .cards .card img {
@@ -555,27 +557,27 @@ footer {
     animation-name: rightToLeft;
     animation-timing-function: ease-out;
     animation-duration: 1s;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 @keyframes rightToLeft {
-        0% {
-            translate:  100% 0;
-            opacity: 0;
-        }
-    
-        50% {
-            opacity: 0.5;
-        }
-    
-        70% {
-            opacity: 0.8;
-        }
-    
-        100% {
-            translate: 0 0;
-            opacity: 1;
-        }
+    0% {
+        translate: 100% 0;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 0.8;
+    }
+
+    100% {
+        translate: 0 0;
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -693,6 +695,11 @@ footer {
         font-size: 16px;
         border-radius: var(--border-radius);
         padding: 5px;
+    }
+
+    .header .cards {
+        display: flex;
+        justify-content: flex-start;
     }
 
     .header .cards .card {
