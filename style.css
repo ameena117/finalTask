@@ -524,9 +524,10 @@ footer {
     color: var(--orange-color);
 }
 
-* {
+body,
+footer {
     animation-name: show;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 
@@ -546,6 +547,36 @@ footer {
 
     100% {
         translate: 0 0;
+        opacity: 1;
+    }
+}
+
+.cards {
+    animation-name: lightSpeedIn;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+}
+
+@keyframes lightSpeedIn {
+    0% {
+        transform: skewX(-40deg);
+        opacity: 0;
+    }
+
+    60% {
+        transform: skewX(10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skewX(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: none;
         opacity: 1;
     }
 }
