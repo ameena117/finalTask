@@ -36,6 +36,11 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: var(--sub-text-size);
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f3;
+    padding: 5px 0;
+    z-index: 1;
 }
 
 .navbar #logo {
@@ -242,7 +247,7 @@ body {
 .benefits .cards .card b,
 .courses .cards .card b,
 .prices .cards .card b,
-.footer .cards .card a b {
+footer .cards .card a b {
     font-weight: 700;
     font-size: var(--sub-text-size);
     text-decoration: none;
@@ -308,6 +313,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: var(--sub-text-size);
+    padding: 5px;
 }
 
 .tests .cards .card .body {
@@ -426,13 +432,13 @@ body {
     margin: 20px auto;
 }
 
-footer .footer {
+footer {
     width: 100%;
     margin: auto;
     padding: 35px;
 }
 
-.footer .cards {
+footer .cards {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
@@ -440,45 +446,45 @@ footer .footer {
     margin-bottom: 20px;
 }
 
-.footer .cards .card {
+footer .cards .card {
     padding: 15px;
     text-align: left;
     border-radius: var(--border-radius);
     list-style-type: none;
 }
 
-.footer .cards .profiles {
+footer .cards .profiles {
     padding: 15px;
     text-align: left;
     border-radius: var(--border-radius);
     list-style-type: none;
 }
 
-.footer .cards .card a,
-.footer .cards .profiles a {
+footer .cards .card a,
+footer .cards .profiles a {
     color: var(--main-font-color);
     font-size: var(--sub-text-size);
     text-decoration: none;
 }
 
-.footer .cards .right-card {
+footer .cards .right-card {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 10px;
 }
 
-.footer .cards .left-card {
+footer .cards .left-card {
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
 
-.footer p {
+footer p {
     text-align: center;
     font-size: var(--sub-text-size);
     margin: 10px
 }
 
-.footer a {
+footer a {
     margin: 2px 5px 0 0;
     border: none;
 }
@@ -510,8 +516,8 @@ footer {
     border: solid 0.01px var(--orange-color);
 }
 
-.footer  .cards .card a:hover,
-.footer .cards .profiles b:hover {
+footer  .cards .card a:hover,
+footer .cards .profiles b:hover{
     color: var(--orange-color);
 }
 
@@ -531,8 +537,8 @@ footer {
     color: #d6d6d9;
 }
 
-.dark .footer .cards .card a,
-.dark .footer .cards .profiles a {
+.dark footer .cards .card a,
+.dark footer .cards .profiles a {
     color: #F1F1F3;
 }
 
@@ -756,7 +762,7 @@ footer {
         margin: auto;
     }
 
-    .footer .cards {
+    footer .cards {
         display: grid;
         grid-template-columns: auto;
         gap: 20px;
@@ -764,24 +770,24 @@ footer {
         margin-bottom: 20px;
     }
 
-    .footer .cards .right-card {
+    footer .cards .right-card {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 10px;
     }
 
-    .footer .cards .left-card {
+    footer .cards .left-card {
         display: grid;
         grid-template-columns: auto;
     }
 
-    .footer p {
+    footer p {
         text-align: center;
         font-size: var(--sub-text-size);
         margin: 20px
     }
 
-    .footer a {
+    footer a {
         margin: 2px 5px 0 0;
         border: none;
     }
