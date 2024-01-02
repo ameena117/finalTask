@@ -318,6 +318,7 @@ footer .cards .card a b {
 
 .tests .cards .card .body {
     padding: 10px;
+    height: 70px;
 }
 
 .tests .person {
@@ -516,8 +517,8 @@ footer {
     border: solid 0.01px var(--orange-color);
 }
 
-footer  .cards .card a:hover,
-footer .cards .profiles b:hover{
+footer .cards .card a:hover,
+footer .cards .profiles b:hover {
     color: var(--orange-color);
 }
 
